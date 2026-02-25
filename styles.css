@@ -1,0 +1,76 @@
+
+.bigote {
+width: 180px;
+height: 180px;
+left: 100px;
+border-radius: 50%;
+position: absolute;
+color:black;
+box-shadow:
+150px 240px 0 0 currentColor,
+300px 240px 0 0 currentColor;
+}
+
+.bigote::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;;
+}
+
+
+.bigote::after{
+    content: "";
+    position: absolute;
+    left: 390px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    transform: rotate(40deg);
+    transform-origin: left 210px;;
+}
+
+.ojos {
+position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 290px; 
+    top: 140px;    
+    background-color: black;
+    box-shadow: 150px 0 0 0 black; 
+    border-radius: 50%;
+}
+
+
+.ojos::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    left: 20px;
+    top: 20px;
+    box-shadow: 150px 0 0 0 white;
+}
+
+
+.sombrero {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    left: 280px;
+    top: 20px;
+    background-color: black;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 -15px 0 -5px black, inset 0 -10px 0 0 black;
+}
+
